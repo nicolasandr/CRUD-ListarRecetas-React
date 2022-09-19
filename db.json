@@ -1,0 +1,41 @@
+{
+    "recetas": [
+        {
+            "titulo": "Chocotorta",
+            "descripcion": "aqui vamos a poner la descripcion de lo que vamos a relizar",
+            "imagen": "https://media.istockphoto.com/photos/homemade-chocotorta-picture-id1327623325?s=612x612",
+            "ingredientes": ["ingrediente 1", "ingrediente 2", "ingrediente 3"],
+            "id": 1
+        },
+        {
+            "titulo": "Chocotorta",
+            "descripcion": "aqui vamos a poner la descripcion de lo que vamos a relizar",
+            "imagen": "https://media.istockphoto.com/photos/homemade-chocotorta-picture-id1327623325?s=612x612",
+            "ingredientes": ["ingrediente 1", "ingrediente 2", "ingrediente 3"],
+            "id": 2
+        },
+        {
+            "titulo": "pan casero",
+            "ingredientes": [
+                "harina",
+                "huevo",
+                "flores",
+                "agua",
+                "levadura",
+                "grasa",
+                "sal",
+                "aceite"
+            ],
+            "descripcion": "ajhsbdjasvdbjabwdkasdf",
+            "imagen": "https://t1.rg.ltmcdn.com/es/posts/7/4/7/pan_casero_esponjoso_55747_orig.jpg",
+            "id": 4
+        },
+        {
+            "titulo": "chocolate",
+            "ingredientes": ["manzana", "pera", "durazno"],
+            "descripcion": "chocolaateee",
+            "imagen": "https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "id": 5
+        }
+    ]
+}

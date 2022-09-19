@@ -5,6 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## instalaciones
 
 react bootstrap: npm install react-bootstrap bootstrap
+rutas: npm install react-router-dom
 simula un server backend: npm install -g json-server
 
 ### Ejecutar proyecto `npm start`

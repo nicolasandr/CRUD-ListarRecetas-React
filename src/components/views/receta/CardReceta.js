@@ -3,7 +3,6 @@ import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const CardReceta = (props) => {
-
     return (
         <div className="col-6 col-md-4 col-lg-3 mt-4">
             <Card className="h-100">
@@ -18,7 +17,7 @@ const CardReceta = (props) => {
                 </Card.Body>
                 <div className="mx-3 py-4">
                     <Link
-                        to={'/detalle/' + props.receta.id}
+                        to={'/detalle/' + props.receta._id}
                         className=" bg-button "
                     >
                         Ver mas

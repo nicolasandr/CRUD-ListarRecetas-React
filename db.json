@@ -12,17 +12,6 @@
       "id": 1
     },
     {
-      "titulo": "Chocotorta",
-      "descripcion": "aqui vamos a poner la descripcion de lo que vamos a relizar",
-      "imagen": "https://media.istockphoto.com/photos/homemade-chocotorta-picture-id1327623325?s=612x612",
-      "ingredientes": [
-        "ingrediente 1",
-        "ingrediente 2",
-        "ingrediente 3"
-      ],
-      "id": 2
-    },
-    {
       "titulo": "pan casero",
       "ingredientes": [
         "harina",

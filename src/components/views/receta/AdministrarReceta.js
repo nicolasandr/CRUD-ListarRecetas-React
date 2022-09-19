@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 
 const AdministrarReceta = () => {
     const [listaRecetas, setListaRecetas] = useState([]);
-    const URL = 'http://localhost:3005/recetas';
+    //variable de entorno con la direccion de mi api
+    const URL = process.env.REACT_APP_API_RECETAS;
 
     useEffect(() => {
         consultarAPI();
@@ -18,16 +19,11 @@ const AdministrarReceta = () => {
     };
     return (
         <div>
-            <h1 className="display-5 mt-5 text-center">
-                Administrar recetas
-            </h1>
+            <h1 className="display-5 mt-5 text-center">Administrar recetas</h1>
             <hr />
             <Container>
                 <div className="d-flex justify-content-end">
-                    <Link
-                        to={`/administrar/crear`}
-                        className=" bg-button mb-2"
-                    >
+                    <Link to={`/administrar/crear`} className=" bg-button mb-2">
                         Agregar
                     </Link>
                 </div>
@@ -45,7 +41,7 @@ const AdministrarReceta = () => {
                     <tbody>
                         {listaRecetas.map((receta) => (
                             <ItemReceta
-                                key={receta.id}
+                                key={receta._id}
                                 receta={receta}
                                 consultarAPI={consultarAPI}
                             ></ItemReceta>

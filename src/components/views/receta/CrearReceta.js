@@ -10,7 +10,9 @@ const CrearReceta = () => {
     const [ingredientes, setIngredientes] = useState([]);
     const [msjError, setMsjError] = useState(false);
 
-    const URL = 'http://localhost:3005/recetas';
+    //variable de entorno con la direccion de mi api
+    const URL = process.env.REACT_APP_API_RECETAS;
+    
     const navegacion = useNavigate();
 
     const handleSubmit = async (e) => {
@@ -60,7 +62,7 @@ const CrearReceta = () => {
                     <Form.Label>Nombre *</Form.Label>
                     <Form.Control
                         type="text"
-                        placeholder="Ej: Chocotorta"
+                        placeholder="Ej: Ratatouille"
                         onChange={(e) => setTitulo(e.target.value)}
                     />
                 </Form.Group>
@@ -68,7 +70,7 @@ const CrearReceta = () => {
                     <Form.Label>URL Imagen</Form.Label>
                     <Form.Control
                         type="text"
-                        placeholder="Ej: https://media.istockphoto.com/photos/homemade-chocotorta-picture-id1327623325?s=612x612"
+                        placeholder="Ej: https://images.pexels.com/photos/7439978/pexels-photo-7439978.jpeg?auto=compress&cs=tinysrgb&w=600"
                         onChange={(e) => setImagen(e.target.value)}
                     />
                 </Form.Group>
@@ -76,7 +78,7 @@ const CrearReceta = () => {
                     <Form.Label>Descripcion *</Form.Label>
                     <Form.Control
                         type="text"
-                        placeholder="Ingrese una descripcion de  5 a 500 caracteres"
+                        placeholder="Ingrese una descripcion de 5 a 500 caracteres"
                         onChange={(e) => setDescripcion(e.target.value)}
                     />
                 </Form.Group>
@@ -84,7 +86,7 @@ const CrearReceta = () => {
                     <Form.Label>Ingredientes *</Form.Label>
                     <Form.Control
                         type="text"
-                        placeholder="ingrediente 1, ingrediente 2, ingrediente 3, etc"
+                        placeholder="ingrediente 1, ingrediente 2, etc"
                         onChange={(e) =>
                             setIngredientes(e.target.value.split(','))
                         }

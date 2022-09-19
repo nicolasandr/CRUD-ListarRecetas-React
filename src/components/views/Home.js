@@ -3,7 +3,8 @@ import CardReceta from './receta/CardReceta';
 
 const Home = () => {
     const [listaRecetas, setListaRecetas] = useState([]);
-    const URL = 'http://localhost:3005/recetas';
+    //variable de entorno con la direccion de mi api
+    const URL = process.env.REACT_APP_API_RECETAS;
 
     useEffect(() => {
         consultarAPI();
@@ -27,7 +28,7 @@ const Home = () => {
             <hr />
             <div className="row mb-5">
                 {listaRecetas.map((receta) => (
-                    <CardReceta key={receta.id} receta={receta}></CardReceta>
+                    <CardReceta key={receta._id} receta={receta}></CardReceta>
                 ))}
             </div>
         </div>

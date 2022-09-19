@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Proyecto lista de recetas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Crea una aplicación web, que permita mostrar un blog de recetas de cocina en una
+página, desde otra pagina debo poder agregar, modificar o quitar las recetas
 
 ## instalaciones
 
@@ -9,4 +10,4 @@ rutas: npm install react-router-dom
 simula un server backend: npm install -g json-server
 
 ### Ejecutar proyecto `npm start`
-### Ejecutar json server `json-server --watch db.json --port 3001`
+### Ejecutar json server `json-server --watch db.json --port 3005`

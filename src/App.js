@@ -1,9 +1,9 @@
-// import AdministrarReceta from './components/views/receta/AdministrarReceta';
-// import CrearReceta from './components/views/receta/CrearReceta';
-// import EditarReceta from './components/views/receta/EditarReceta';
-// import Home from './components/views/Home';
-// import Error from './components/views/Error';
-// import Detalle from './components/views/Detalle';
+import AdministrarReceta from './components/views/receta/AdministrarReceta';
+import CrearReceta from './components/views/receta/CrearReceta';
+import EditarReceta from './components/views/receta/EditarReceta';
+import Home from './components/views/Home';
+import Error from './components/views/Error';
+import Detalle from './components/views/Detalle';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Menu from './components/common/Navbar';
 import Footer from './components/common/Footer';
@@ -16,28 +16,28 @@ function App() {
             <BrowserRouter>
                 <Menu></Menu>
                 <Routes>
-                    {/* <Route exact path="/" element={<Home></Home>}></Route> */}
-                    {/* <Route
+                    <Route exact path="/" element={<Home></Home>}></Route>
+                    <Route
                         exact
                         path="/administrar"
                         element={<AdministrarReceta></AdministrarReceta>}
-                    ></Route> */}
-                    {/* <Route
+                    ></Route>
+                    <Route
                         exact
                         path="/administrar/crear"
                         element={<CrearReceta></CrearReceta>}
-                    ></Route> */}
-                    {/* <Route
+                    ></Route>
+                    <Route
                         exact
                         path="/administrar/editar/:id"
                         element={<EditarReceta></EditarReceta>}
-                    ></Route> */}
-                    {/* <Route exact path="*" element={<Error></Error>}></Route>
+                    ></Route>
+                    <Route exact path="*" element={<Error></Error>}></Route>
                     <Route
                         exact
                         path="/detalle/:id"
                         element={<Detalle></Detalle>}
-                    ></Route> */}
+                    ></Route>
                 </Routes>
                 <Footer></Footer>
             </BrowserRouter>

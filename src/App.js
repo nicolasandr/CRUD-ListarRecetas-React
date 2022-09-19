@@ -12,7 +12,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
     return (
-        <div className="App body">
+        <div className="body">
             <BrowserRouter>
                 <Menu></Menu>
                 <Routes>

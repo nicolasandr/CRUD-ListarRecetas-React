@@ -1,5 +1,19 @@
+.width-img-portada {
+  width: 50%;
+}
 .body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
+.bg-cream{
+        background: rgb(228, 209, 157);
+}
+.bg-button{
+        background-color: rgb(160, 88, 1);
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+}
+

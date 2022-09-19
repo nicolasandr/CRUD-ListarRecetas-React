@@ -1,9 +1,8 @@
 import React from 'react';
-import { Button, Card } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const CardReceta = (props) => {
-    const URL = 'http://localhost:3005/recetas';
 
     return (
         <div className="col-6 col-md-4 col-lg-3 mt-4">
@@ -17,10 +16,10 @@ const CardReceta = (props) => {
                     <Card.Title>{props.receta.titulo}</Card.Title>
                     <Card.Text>{props.receta.descripcion}</Card.Text>
                 </Card.Body>
-                <div className="mx-3">
+                <div className="mx-3 py-4">
                     <Link
                         to={'/detalle/' + props.receta.id}
-                        className="btn btn-primary mb-3"
+                        className=" bg-button "
                     >
                         Ver mas
                     </Link>

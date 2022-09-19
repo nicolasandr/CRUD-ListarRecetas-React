@@ -22,7 +22,7 @@ const Home = () => {
     return (
         <div className="container">
             <h1 className="display-4 mt-5 text-center">
-                Encuentra tus recetas favoritas
+                Conocé todas nuestras recetas
             </h1>
             <hr />
             <div className="row mb-5">

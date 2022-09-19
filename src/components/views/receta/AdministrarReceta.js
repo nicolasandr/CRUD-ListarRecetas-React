@@ -19,14 +19,14 @@ const AdministrarReceta = () => {
     return (
         <div>
             <h1 className="display-5 mt-5 text-center">
-                Administra tus recetas
+                Administrar recetas
             </h1>
             <hr />
             <Container>
                 <div className="d-flex justify-content-end">
                     <Link
                         to={`/administrar/crear`}
-                        className="btn btn-primary mb-2"
+                        className=" bg-button mb-2"
                     >
                         Agregar
                     </Link>

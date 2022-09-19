@@ -30,11 +30,11 @@ const ItemReceta = (props) => {
             <td>
                 <Link
                     to={`/administrar/editar/${props.receta.id}`}
-                    className="btn btn-warning"
+                    className="btn btn-secondary my-2"
                 >
                     Editar
                 </Link>
-                <Button variant="danger" onClick={handleDelete}>
+                <Button variant='danger' onClick={handleDelete}>
                     Borrar
                 </Button>
             </td>

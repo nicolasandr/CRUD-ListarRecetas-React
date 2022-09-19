@@ -52,7 +52,7 @@ const CrearReceta = () => {
         <Card className="container ms-auto me-auto my-5 bg-light border rounded px-0">
             <Card.Header className="bg-dark">
                 <h1 className="fs-4 fw-light text-center text-light">
-                    Agrega una receta
+                    Agrega una nueva receta
                 </h1>
             </Card.Header>
             <Form className="m-3" onSubmit={handleSubmit}>
@@ -90,14 +90,14 @@ const CrearReceta = () => {
                         }
                     />
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button variant="outline-dark" type="submit">
                     Guardar
                 </Button>
             </Form>
             {msjError ? (
                 <Alert variant="danger" className=" mx-3">
-                    La receta no pudo ser creada, verifique los datos
-                    ingresados!
+                    No pudimos crear la receta,verifica los datos ingresados y
+                    vuelve a intentar!
                 </Alert>
             ) : null}
         </Card>

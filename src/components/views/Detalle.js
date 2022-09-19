@@ -20,18 +20,22 @@ const Detalle = () => {
     };
 
     return (
-        <Card className="w-75 me-auto ms-auto m-5">
-            <Card.Header className="text-center">{receta.titulo}</Card.Header>
-            <img src={receta.imagen} alt={receta.titulo} />
-            <Card.Body>
-                <h5>Descripcion:</h5>
-                <Card.Text>{receta.descripcion}</Card.Text>
-                <hr />
-                <MostrarIngredientes
-                    ingredientes={receta.ingredientes}
-                ></MostrarIngredientes>
-            </Card.Body>
-        </Card>
+        <div className="container d-flex justify-content-center py-5 my-auto">
+            <Card className="flex-md-row">
+                <Card.Img src={receta.imagen} className="w-50" />
+                <Card.Body className="container">
+                    <Card.Title>
+                        <h2>{receta.titulo}</h2>
+                    </Card.Title>
+                    <hr />
+                    <h4>Descripcion:</h4>
+                    <Card.Text>{receta.descripcion}</Card.Text>
+                    <MostrarIngredientes
+                        ingredientes={receta.ingredientes}
+                    ></MostrarIngredientes>
+                </Card.Body>
+            </Card>
+        </div>
     );
 };
 

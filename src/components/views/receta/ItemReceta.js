@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import { Button,Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 const ItemReceta = (props) => {
     //variable de entorno con la direccion de mi api

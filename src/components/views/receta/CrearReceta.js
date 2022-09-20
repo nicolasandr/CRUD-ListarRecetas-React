@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Form, Button, Card, Alert } from 'react-bootstrap';
 import { cantidadCaracteres, validarURL } from './helpers';
 import { useNavigate } from 'react-router-dom';
+import './crearReceta.css'
 
 const CrearReceta = () => {
     const [titulo, setTitulo] = useState('');
@@ -52,11 +53,11 @@ const CrearReceta = () => {
     };
     return (
         <Card className="container ms-auto me-auto my-5 bg-light border rounded px-0">
-            <Card.Header className="bg-dark">
+            <div className="bg-brown rounded py-2">
                 <h1 className="fs-4 fw-light text-center text-light">
                     Agrega una nueva receta
                 </h1>
-            </Card.Header>
+            </div>
             <Form className="m-3" onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formTitulo">
                     <Form.Label>Nombre *</Form.Label>

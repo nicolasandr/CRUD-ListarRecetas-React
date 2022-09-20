@@ -14,7 +14,12 @@ const CardReceta = (props) => {
                 <div className="mb-0 mt-auto">
                     <Card.Body>
                         <Card.Title>{props.receta.titulo}</Card.Title>
-                        <Card.Text>{props.receta.descripcion}</Card.Text>
+                        <div className="row">
+                            <Card.Text className="col-10 text-truncate pb-4">
+                                {props.receta.descripcion}
+                            </Card.Text>
+                        </div>
+                        {/* <Card.Text>{props.receta.descripcion}</Card.Text> */}
                     </Card.Body>
                     <div className="mx-3 py-4">
                         <Link

@@ -10,8 +10,7 @@ const CrearReceta = () => {
     const [imagen, setImagen] = useState('');
     const [ingredientes, setIngredientes] = useState([]);
     const [msjError, setMsjError] = useState(false);
-
-    //variable de entorno con la direccion de mi api
+    
     const URL = process.env.REACT_APP_API_RECETAS;
     
     const navegacion = useNavigate();

@@ -113,7 +113,7 @@ const EditarReceta = () => {
                         ref={ingredientesRef}
                     />
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button variant="outline-dark" type="submit">
                     Actualizar
                 </Button>
             </Form>

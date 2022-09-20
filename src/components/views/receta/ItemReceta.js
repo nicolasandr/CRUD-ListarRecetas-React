@@ -1,26 +1,43 @@
 import React from 'react';
-import { Button,Card } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
 const ItemReceta = (props) => {
     //variable de entorno con la direccion de mi api
     const URL = process.env.REACT_APP_API_RECETAS;
-    const handleDelete = async () => {
-        try {
-            const parametrosPeticion = {
-                method: 'DELETE',
-            };
-            const respuesta = await fetch(
-                URL + '/' + props.receta._id,
-                parametrosPeticion
-            );
-            if (respuesta.status === 200) {
-                console.log('Producto Eliminado');
+    const handleDelete = () => {
+        //
+        Swal.fire({
+            title: '¿Esta seguro de eliminar esta receta?',
+            text: 'No se puede revertir esta accion',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Borrar',
+            cancelButtonText: 'Cancelar',
+        }).then(async (result) => {
+            if (result.isConfirmed) {
+                try {
+                    const parametros = {
+                        method: 'DELETE',
+                    };
+                    const respuesta = await fetch(URL + '/' + props.receta._id, parametros);
+                    if (respuesta.status === 200) {
+                        Swal.fire(
+                            'Receta eliminada',
+                            'La receta se eliminó con exito',
+                            'success'
+                        );
+                        props.consultarAPI();
+                    }
+                } catch (error) {
+                    console.log(error);
+                }
             }
-            props.consultarAPI();
-        } catch (error) {
-            console.log(error);
-        }
+        });
     };
+    
     return (
         <tr className="bg-transparent">
             <td>{props.receta._id}</td>

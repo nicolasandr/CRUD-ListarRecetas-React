@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import './ItemReceta.css';
 const ItemReceta = (props) => {
     //variable de entorno con la direccion de mi api
     const URL = process.env.REACT_APP_API_RECETAS;
@@ -22,7 +23,10 @@ const ItemReceta = (props) => {
                     const parametros = {
                         method: 'DELETE',
                     };
-                    const respuesta = await fetch(URL + '/' + props.receta._id, parametros);
+                    const respuesta = await fetch(
+                        URL + '/' + props.receta._id,
+                        parametros
+                    );
                     if (respuesta.status === 200) {
                         Swal.fire(
                             'Receta eliminada',
@@ -37,18 +41,26 @@ const ItemReceta = (props) => {
             }
         });
     };
-    
+
     return (
         <tr className="bg-transparent">
             <td>{props.receta._id}</td>
             <td>{props.receta.titulo}</td>
-            <td>{props.receta.imagen}</td>
-            <td>{props.receta.descripcion}</td>
-            <td>{props.receta.ingredientes.toString()}</td>
+            <td>
+                <div className="truncate">{props.receta.imagen}</div>
+            </td>
+            <td>
+                <div className="truncate">{props.receta.descripcion}</div>
+            </td>
+            <td>
+                <div className="truncate">
+                    {props.receta.ingredientes.toString()}
+                </div>
+            </td>
             <td>
                 <Link
                     to={`/administrar/editar/${props.receta._id}`}
-                    className="btn btn-secondary my-2"
+                    className="btn btn-secondary mx-2"
                 >
                     Editar
                 </Link>

@@ -40,6 +40,10 @@ function App() {
                         path="/detalle/:id"
                         element={<Detalle></Detalle>}
                     ></Route>
+                    <Route
+                    exact
+                    path= '/error'
+                    element={<Error></Error>}></Route>
                 </Routes>
                 <Footer></Footer>
             </BrowserRouter>

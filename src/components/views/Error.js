@@ -1,13 +1,11 @@
 import React from 'react';
+import Error404 from '../img/error404.webp'
 
 const Error = () => {
     return (
         <div className="container d-flex justify-content-center my-5 ">
             <div>
-                <h1 className="display-2">Ops!</h1>
-            </div>
-            <div>
-                <h2 className="display-2">Error 404</h2>
+                <img src={Error404} className="h-100" />
             </div>
         </div>
     );

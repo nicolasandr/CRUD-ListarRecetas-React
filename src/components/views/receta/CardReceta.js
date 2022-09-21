@@ -23,7 +23,7 @@ const CardReceta = (props) => {
                     </Card.Body>
                     <div className="mx-3 py-4">
                         <Link
-                            to={'/detalle/' + props.receta._id}
+                            to={'/detalle/' + props.receta.id}
                             className=" bg-button "
                         >
                             Ver mas

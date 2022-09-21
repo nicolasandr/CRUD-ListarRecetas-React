@@ -19,3 +19,10 @@ export const validarURL = (input) => {
         return true;
     }
 };
+export const cantidadCaracteresAdmin = (input, min) => {
+    if (input.length >= min) {
+        return true;
+    } else {
+        return false;
+    }
+};

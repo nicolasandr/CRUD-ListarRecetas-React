@@ -5,7 +5,6 @@ página, desde otra pagina debo poder agregar, modificar o quitar las recetas ut
 
 ## Instalaciones
 
-<<<<<<< HEAD
 $ `npm i`
 
 ## simula un server backend: 
@@ -32,18 +31,3 @@ $`http://localhost:4000/apireceta/usuario`
       "administrador": "nicolas",
       "claveadmin": "1234"
     }
-=======
-$ npm install
-
-## Ejecuciones
-
-Ejecutar proyecto:
-
-$  `npm start`
-
-Ejecutar json server:
-
-$  `json-server --watch db.json --port 3005`
-
-
->>>>>>> dev

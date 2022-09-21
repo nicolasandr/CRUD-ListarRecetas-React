@@ -3,7 +3,6 @@ import CardReceta from './receta/CardReceta';
 
 const Home = () => {
     const [listaRecetas, setListaRecetas] = useState([]);
-    //variable de entorno con la direccion de mi api
     const URL = process.env.REACT_APP_API_RECETAS;
 
     useEffect(() => {

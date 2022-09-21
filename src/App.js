@@ -9,7 +9,7 @@ import Menu from './components/common/Navbar';
 import Footer from './components/common/Footer';
 import './app.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-
+import Login from './components/views/receta/Login'
 function App() {
     return (
         <div className="body">
@@ -17,6 +17,8 @@ function App() {
                 <Menu></Menu>
                 <Routes>
                     <Route exact path="/" element={<Home></Home>}></Route>
+                    <Route exact path="/login" element={<Login></Login>}>
+                    </Route>
                     <Route
                         exact
                         path="/administrar"
@@ -38,6 +40,10 @@ function App() {
                         path="/detalle/:id"
                         element={<Detalle></Detalle>}
                     ></Route>
+                    <Route
+                    exact
+                    path= '/error'
+                    element={<Error></Error>}></Route>
                 </Routes>
                 <Footer></Footer>
             </BrowserRouter>

@@ -4,7 +4,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { cantidadCaracteres, validarURL } from './helpers';
 
 const EditarReceta = () => {
-    // traer parametro
+    
     const { id } = useParams();
 
     const [recetas, setRecetas] = useState({});
@@ -14,7 +14,6 @@ const EditarReceta = () => {
     const ingredientesRef = useRef([]);
 
     const [msjError, setMsjError] = useState(false);
-    //variable de entorno con la direccion de mi api
     const URL = process.env.REACT_APP_API_RECETAS;
     const navegacion = useNavigate();
 
@@ -113,7 +112,7 @@ const EditarReceta = () => {
                         ref={ingredientesRef}
                     />
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button variant="outline-dark" type="submit">
                     Actualizar
                 </Button>
             </Form>

@@ -1,6 +1,6 @@
 export const cantidadCaracteres = (input, min, max) => {
     if (input.length >= min && input.length <= max) {
-        return true; //dato correcto
+        return true; 
     } else {
         return false;
     }
@@ -17,5 +17,12 @@ export const validarURL = (input) => {
         }
     } else {
         return true;
+    }
+};
+export const cantidadCaracteresAdmin = (input, min) => {
+    if (input.length >= min) {
+        return true;
+    } else {
+        return false;
     }
 };

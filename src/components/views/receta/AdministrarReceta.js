@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const AdministrarReceta = () => {
     const [listaRecetas, setListaRecetas] = useState([]);
-    //variable de entorno con la direccion de mi api
+    //variable de entorno
     const URL = process.env.REACT_APP_API_RECETAS;
 
     useEffect(() => {

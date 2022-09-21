@@ -67,7 +67,7 @@ const Login = () => {
                     </h1>
                 </div>
                 <Form className="m-3" onSubmit={handleSubmit}>
-                    <Form.Group className="mb-3" controlId="formTitulo">
+                    <Form.Group className="mb-3" controlId="formAdmin">
                         <Form.Label>Nombre Administrador*</Form.Label>
                         <Form.Control
                             type="text"
@@ -75,7 +75,7 @@ const Login = () => {
                             onChange={(e) => setAdministrador(e.target.value)}
                         />
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="formTitulo">
+                    <Form.Group className="mb-3" controlId="formClave">
                         <Form.Label>Contraseña*</Form.Label>
                         <Form.Control
                             type="text"
@@ -85,7 +85,7 @@ const Login = () => {
                     </Form.Group>
 
                     <Button variant="outline-dark" type="submit">
-                        Guardar
+                        Ingresar
                     </Button>
                 </Form>
                 {msjError ? (

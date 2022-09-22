@@ -20,7 +20,6 @@ const Login = () => {
 
     const consultarAPI = async () => {
         try {
-            console.log(URL);
             const respuesta = await fetch(URL);
             const obtenerAdministrador = await respuesta.json();
             setDatosAdmin(obtenerAdministrador);
@@ -32,7 +31,6 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
          const Usuarios = datosAdmin.find((element) => element.administrador === administrador)
-        //  console.log(Usuarios.claveadmin);
         if (
             cantidadCaracteresAdmin(administrador, 1) &&
             cantidadCaracteresAdmin(clave, 1)
@@ -45,7 +43,6 @@ const Login = () => {
                     Usuarios.claveadmin === clave
                 ) {
                     navegacion('/administrar');
-                    console.log('entro');
                 } else {
                     setMsjError(true);
                 }

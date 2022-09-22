@@ -40,7 +40,7 @@ const CrearReceta = () => {
                 };
                 const respuesta = await fetch(URL, parametrosPeticion);
                 if (respuesta.status === 201) {
-                    console.log('el producto se creo correctamente');
+                    // console.log('el producto se creo correctamente');
                     navegacion('/administrar');
                 }
             } catch (error) {
